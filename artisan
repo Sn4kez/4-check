@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+// Create the service container
+$app = require __DIR__ . '/bootstrap/app.php';
+
+// Create a new console kernel instance
+$kernel = $app->make('Illuminate\Contracts\Console\Kernel');
+
+// Handle the incoming console command
+exit($kernel->handle(new ArgvInput, new ConsoleOutput));
