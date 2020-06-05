@@ -52,5 +52,7 @@ Before installing the 4-check Backend please make sure that you fulfil general l
 8. Set up passport and add clients to .env file
 `artisan passport:install`
 
+For accessing the api you have to route your api url to the public directory within the cloned codebase.
+
 If you want to see what other options you have with artisan use:
 `artisan list`
