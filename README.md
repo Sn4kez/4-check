@@ -33,3 +33,24 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 [Stripe](https://stripe.com/) - Payment was handled by stripe.  
 [Sendgrid](https://sendgrid.com) - E-Mail logistics were handled by sendgrid.  
 [PDF Generator API](https://pdfgeneratorapi.com) - PDF Generation was handled by PDF Generator API  
+
+### Setup Instructions for Backend Code
+
+Before installing the 4-check Backend please make sure that you fulfil general lumen requirements ([see here](https://lumen.laravel.com/docs/5.6)).
+
+1. Clone Backend Branch from this repository to your server
+2. Setup a Database (for example postgres or mysql) 
+3. Copy .env.example and rename it to .env
+`cp .env.example .env`
+4. Make sure that your .env file contains all needed configuration information
+5. Install dependencies
+`composer install`
+6. Generate application key
+`artisan key:generate`
+7. Migrate database structure
+`artisan migrate` or `artisan migrate:fresh`
+8. Set up passport and add clients to .env file
+`artisan passport:install`
+
+If you want to see what other options you have with artisan use:
+`artisan list`
