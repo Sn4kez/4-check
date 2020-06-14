@@ -357,7 +357,7 @@ class AuditController extends Controller {
         $audits->where('isArchived', '=', 1);
 
         if (!$user->isAdmin() && !$user->isSuperAdmin()) {
-            $audits->where('userId', '=', $user->id);«
+            $audits->where('userId', '=', $user->id);
         }
 
         $audits = $this->filterRequest($request->all(), $audits, $user);
@@ -446,7 +446,7 @@ class AuditController extends Controller {
     public function exportSingle(Request $request, string $auditId) {
         $audit = Audit::findOrFail($auditId);
 
-        // ToDo: set PDF GENERATOR RESOURCE
+        // ToDo: set PDF GENERATOR RESOURCE for single export
 
         $key = env('PDF_GENERATOR_KEY');
         $workspace = env('PDF_GENERATOR_WORKSPACE');
