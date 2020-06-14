@@ -38,7 +38,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 Before installing the 4-check Backend please make sure that you fulfil general lumen requirements ([see here](https://lumen.laravel.com/docs/5.6)).
 
-1. Clone Backend Branch from this repository to your server
+1. Clone backend branch from this repository to your server
 2. Setup a Database (for example postgres or mysql) 
 3. Copy .env.example and rename it to .env
 `cp .env.example .env`
@@ -56,3 +56,9 @@ For accessing the api you have to route your api url to the public directory wit
 
 If you want to see what other options you have with artisan use:
 `artisan list`
+
+### Instructions for including pdf gerneator resources
+
+1. Clone pdf-gernerator-templates branch to get 4-check Template exportes.
+2. Import those templates to your pdf genreator account.
+3. Include the resources to 'app/Http/Controllers/AnalyticsController.php' and 'app/Http/Controllers/AuditController.php' (Have a look for ToDo: instructions).
