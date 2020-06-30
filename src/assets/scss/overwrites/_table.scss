@@ -1,0 +1,64 @@
+/**
+ * @description: Element UI - Table overwrites
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-10-10
+ */
+
+.el-table--col-padding {
+	.el-table__row {
+		td {
+			padding-top: 0.7rem;
+			padding-bottom: 0.7rem;
+		}
+	}
+}
+
+.el-table--striped {
+	.el-table__row {
+		td,
+		th {
+			background-color: #ffffff;
+			border-bottom: none;
+		}
+	}
+}
+
+.el-table-cell--ellipsis {
+	.cell {
+		word-break: normal;
+		white-space: nowrap;
+	}
+}
+
+.el-table-cell--no-p-r {
+	.cell {
+		padding-right: 0;
+	}
+}
+
+.el-table-cell--no-padding {
+	.cell {
+		padding: 0;
+	}
+}
+
+.el-table__body {
+	tr.current-row > td {
+		background-color: transparent;
+	}
+}
+
+// Fix horizontal scrollbar shine through dialog
+.el-dialog--open {
+
+	.el-table--scrollable-x {
+		.el-table__body-wrapper {
+			overflow-x: hidden;
+		}
+	}
+}
+
+.table--overflow {
+    overflow-x: auto;
+}

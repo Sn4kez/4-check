@@ -1,0 +1,42 @@
+/**
+ * @description: Buttons
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-06-20
+ */
+
+.btn {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 0.8rem;
+	outline: none;
+	padding: 0.5rem 0.7rem;
+}
+
+.btn-menu {
+	min-width: 3rem;
+
+	> span {
+		background-color: #333333;
+		border-radius: 2px;
+		display: block;
+		height: 0.2rem;
+		margin-top: 4px;
+		width: 100%;
+
+		transform: translate3d(-95%,0,0);
+		transition: transform .3s ease-in-out;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&--visible {
+		> span {
+			transform: translate3d(0,0,0);
+		}
+	}
+
+}

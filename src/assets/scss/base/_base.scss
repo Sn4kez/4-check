@@ -1,0 +1,74 @@
+/**
+ * @description: Base styles
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-10-12
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-family: $font-system;
+    font-size: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	&.cordova {
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $c-black;
+	font-family: $font-headline;
+    font-weight: $font-weight-headline;
+    line-height: 1.4rem;
+}
+
+a {
+	color: $c-brand;
+	font-family: $font-links;
+	text-decoration: none;
+}
+
+a,
+button {
+	/* From: https://css-tricks.com/how-to-disable-links/*/
+	&.is-disabled {
+		cursor: not-allowed;
+		display: inline-block;  /* For IE11/ MS Edge bug */
+		opacity: 0.5;
+		pointer-events: none;
+		text-decoration: none;
+	}
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.page-break {
+    page-break-after: always;
+    page-break-inside: avoid;
+    clear:both;
+}
+.page-break-before {
+    page-break-before: always;
+    page-break-inside: avoid;
+    clear:both;
+}

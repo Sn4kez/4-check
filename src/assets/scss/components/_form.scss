@@ -1,0 +1,18 @@
+/**
+ * @description: Form
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-06-20
+ */
+
+select {
+    appearance: none;
+    background-image: url('./assets/img/fa-angle-down.png');
+	background-color: #ffffff;
+	background-position: right;
+	background-repeat: no-repeat;
+	border: 1px solid $c-light-gray;
+	border-radius: 0;
+	font-size: 1rem;
+	padding: 0.4rem 2rem 0.4rem 0.5rem;
+}

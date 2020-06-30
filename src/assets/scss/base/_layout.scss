@@ -1,0 +1,43 @@
+/**
+ * @description: Layout
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-10-11
+ */
+.main-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: $distance-md;
+	max-width: $container-width-xl;
+    width: 100%;
+
+	@media screen and (min-width: $screen-md) {
+		padding-top: 0;
+	}
+
+	// @media screen and (min-width: $screen-xl) {
+	// 	max-width: $container-width-xl;
+	// }
+}
+
+.app-layout {
+    &--default {
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (min-width: $screen-md) {
+            background: url('/img/rawpixel-626044-unsplash.jpg') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+
+    &-inner {
+        position: relative;
+        z-index: 1;
+
+        @media screen and (min-width: $screen-md) {
+            background-color: rgba(0,0,0,0.7);
+        }
+    }
+}

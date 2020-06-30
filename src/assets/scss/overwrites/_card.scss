@@ -1,0 +1,44 @@
+/**
+ * @description: Element UI - Card
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-08-10
+ */
+
+.el-card {
+	// border-color: $c-extra-light-gray;
+    // border-radius: $border-radius-base;
+
+    @media screen and (max-width: $screen-md) {
+        .el-card__body {
+            padding: 0.5rem;
+        }
+
+        &--no-padding-sm {
+            .el-card__body {
+                padding: 0;
+            }
+        }
+    }
+
+    &--no-padding {
+        .el-card__body {
+            padding: 0;
+        }
+    }
+
+}
+
+// .el-card__header {
+// 	border-bottom-color: $c-light-gray;
+// }
+
+// .el-card__body {
+// 	overflow: hidden;
+// }
+
+// .flex {
+// 	> .el-card {
+// 		width: 100%;
+// 	}
+// }

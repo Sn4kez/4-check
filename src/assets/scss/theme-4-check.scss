@@ -1,0 +1,35 @@
+/**
+ * Element UI Theme for 4-check
+ * @reference   http://element.eleme.io/#/en-US/component/custom-theme
+ * @author      Yannick Herzog
+ * @modified    2018-10-06
+ */
+
+// Base styles
+@import './base/variables';
+
+// Border
+$--border-radius-base: $border-radius-base;
+
+// Tag
+$--tag-fill: rgba(#409EFF, 0.10);
+$--tag-color: #409EFF;
+
+// Change colors
+$--color-primary: $c-brand;
+$--color-info: $c-gray;
+
+// Fonts
+$--font-size-base: $font-size-base;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+// Card shadow
+$--card-border-radius: 2px;
+$--box-shadow-light: 0 4px 4px 0 rgba(0,0,0,0.05);
+
+@import "~element-ui/packages/theme-chalk/src/index";
+// @import '~element-ui/packages/theme-chalk/src/display';
+
+$--border-color-light: $c-light-gray;

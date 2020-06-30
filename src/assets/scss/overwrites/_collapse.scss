@@ -1,0 +1,49 @@
+/**
+ * @description: Element UI - Collapse overwrites
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-09-11
+ */
+
+.el-collapse {
+    &--transparent {
+        .el-collapse-item__wrap,
+        .el-collapse-item__header {
+            background-color: transparent;
+        }
+    }
+
+    &--no-border-top {
+        border-top-color: transparent;
+    }
+}
+
+.el-collapse-item__content {
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width: $screen-md) {
+
+    .el-collapse-item__header {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .el-collapse-item__arrow {
+        line-height: 4rem;
+    }
+}
+
+@media screen and (min-width: $screen-md) {
+
+    .el-collapse-item__header {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .el-collapse-item__arrow {
+        line-height: 4rem;
+    }
+}

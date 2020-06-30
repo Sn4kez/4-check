@@ -1,0 +1,14 @@
+/**
+ * @description: Quasar Framework - QList overwrite
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-07-24
+ */
+
+.q-list-header {
+    font-weight: initial;
+
+    @media screen and (min-width: $screen-md) {
+        font-size: 1rem;
+    }
+}

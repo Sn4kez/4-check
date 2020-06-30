@@ -1,0 +1,58 @@
+/**
+ * @description: Quasar Framework - QTabs overwrite
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-10-06
+ */
+.q-tabs--brand-ios {
+	.q-tabs-head {
+        border-radius: 3px;
+        padding-right: 0;//$distance-md;
+        padding-left: 0;//$distance-md;
+	}
+
+	.q-tab {
+		border-left: 1px solid $c-brand;
+        // border-top: 1px solid $c-brand;
+        // border-bottom: 1px solid $c-brand;
+
+		min-height: 40px;
+		font-size: 0.8rem;
+
+        &:first-child,
+        &:first-of-type {
+            border-radius: 3px 0 0 3px;
+            border-left-color: transparent;
+        }
+
+        &:last-child,
+        &:last-of-type {
+            border-radius: 0 3px 3px 0;
+            // border-right: 1px solid $c-brand;
+            border-right-color: transparent;
+        }
+
+		&.active {
+			color: #ffffff !important;
+			background-color: $c-brand;
+		}
+	}
+
+	.q-tab-pane {
+		padding-left: 0;//$distance-md;
+		padding-right: 0;//$distance-md;
+    }
+
+    .q-tabs-panes {
+        border-top-color: transparent !important;
+    }
+
+    .q-tabs-bar {
+        border-bottom-width: 0;
+    }
+
+    .q-tabs-scroller {
+        border-radius: 3px;
+        border: 1px solid $c-brand;
+    }
+}

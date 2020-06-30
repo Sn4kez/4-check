@@ -1,0 +1,76 @@
+/**
+ * @description: Box
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-06-21
+ */
+
+ .box-container {
+    width: 100%;
+
+    @media screen and (min-width: $screen-sm) {
+        padding: 2rem 1rem 1rem;
+    }
+
+    @media screen and (min-width: $screen-md) {
+        width: 60%;
+    }
+
+    &__inner {
+        @media screen and (min-width: $screen-sm) {
+            margin: 0 auto;
+            max-width: 30rem;
+        }
+    }
+
+    &--wide {
+        .box-container__inner {
+            @media screen and (min-width: $screen-xs) {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+ }
+
+ .box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 3px solid $c-brand;
+    box-shadow: 0 0 5px 0 transparentize($c-black, 0.8);
+    padding: 2rem 2rem 1rem;
+    width: 90%;
+
+    @media screen and (min-width: $screen-xs) {
+        padding: 4rem 5rem;
+        width: 70%;
+    }
+
+    @media screen and (min-width: $screen-md) {
+        width: 50%;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+        width: 40%;
+    }
+
+    @media screen and (min-width: 1450px) {
+        width: 35%;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+        width: 30%;
+    }
+
+    &--wide {
+        width: 100%;
+
+        @media screen and (min-width: $screen-md) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: 1450px) {
+            width: 50%;
+        }
+    }
+ }

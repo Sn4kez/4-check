@@ -1,0 +1,31 @@
+/**
+ * @description: Buttons
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-08-06
+ */
+
+.el-button {
+	border-radius: $border-radius-base;
+}
+
+.el-button--full-width {
+	width: 100%;
+}
+
+.el-button--full-sm {
+    @media screen and (max-width: $screen-md) {
+        width: 100%;
+    }
+}
+
+.q-btn {
+    text-transform: none;
+
+    &:not(.q-btn-round):not(.q-btn-rounded) {
+        border-radius: $border-radius-base;
+        font-weight: 500;
+        line-height: 1rem;
+        padding: 12px 20px;
+    }
+}

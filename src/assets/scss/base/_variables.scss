@@ -1,0 +1,90 @@
+/**
+ * @description: Variables
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @modified: 2018-10-10
+ */
+
+// Colors
+$c-brand: #4DAE4E;
+
+$c-black: #1A1A18;
+$c-light-black: lighten(#1A1A18, 10%);
+
+$c-gray: #748593;
+$c-medium-gray: rgba(132, 135, 141, 0.6);
+// $c-light-gray: rgba(132, 135, 141, 0.3);
+$c-light-gray: rgba(208, 214, 218, 1);
+$c-lighter-gray: lighten($c-light-gray, 15%);
+
+$c-light-blue: #F5F9FC;
+// $c-light-blue: rgb(245,249,252);
+
+$c-green: #4EC600;
+$c-red: #E21E39;
+$c-yellow: #FFBB00;
+$c-orange: #F38307;
+$c-aqua: #59D6DA;
+$c-purple: #815EFF;
+$c-navi-blue: #396ED3;
+
+$c-danger: $c-red;
+$c-warning: $c-yellow;
+$c-success: $c-green;
+$c-info: $c-aqua;
+
+// Sidebar
+$c-sidebar-bg: rgb(42,51,60); //rgb(61,71,81);
+$sidebar-with-collapse: 72px;
+$sidebar-width: 13rem;
+
+$c-menu-bg: #ffffff;
+
+// Fonts
+$font-size-base: 1rem;
+$font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // https://css-tricks.com/snippets/css/system-font-stack/
+$font-brand: 'Eina01-SemiBold', Helvetica, sans-serif;
+$font-text: 'Open Sans', sans-serif;
+$font-headline: "system", 'Eina01-SemiBold', Helvetica, sans-serif;
+$font-weight-headline: 300;
+$font-links: 'Roboto', sans-serif;
+
+// App
+$c-app-bg: rgb(248,248,248);
+$c-app-bg--mobile: rgb(248,248,248);
+
+// Header
+$c-header-bg: #ffffff;
+$header-height-sm: 3rem;
+$header-height-md: 4rem;
+
+// Tabbar
+$app-tabbar-height-xs: 50px;
+$app-tabbar-height-sm: 50px;
+$c-app-tabbar: #ffffff;
+
+// Media queries
+$screen-xs: '420px';
+$screen-sm: '768px';
+$screen-md: '992px';
+$screen-lg: '1200px';
+$screen-xl: '1920px';
+
+// Border
+$border-radius-base: 2px;
+
+// Margins & Paddings
+$distance-sm: 0.2rem;
+$distance-md: 0.6rem;
+$distance-1: 1rem;
+$distance-2: 2rem;
+$distance-3: 3rem;
+$distance-4: 4rem;
+$distance-5: 5rem;
+
+// Layout
+$container-width: 1200px;
+$container-width-xl: 1600px;
+
+// OffCanvas
+$offcanvas-bg: #ffffff;

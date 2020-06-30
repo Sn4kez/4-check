@@ -1,0 +1,20 @@
+/**
+ * @description: Element UI - Dropdown overwrite
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-09-26
+ */
+
+.q-maximized-modal > .el-dropdown-menu {
+    z-index: 7000 !important; // Always show dropdown menu even in quasars modal
+}
+
+.el-dropdown-link {
+	cursor: pointer;
+}
+
+.el-dropdown-menu__item {
+    a {
+        color: $c-gray;
+    }
+}

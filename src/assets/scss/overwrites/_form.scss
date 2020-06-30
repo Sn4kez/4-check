@@ -1,0 +1,75 @@
+/**
+ * @description: Element UI/Quasar - Forms overwrite
+ * @project: 4-check
+ * @author: Yannick Herzog
+ * @last-modified: 2018-10-11
+ */
+.el-checkbox--nowrap {
+    display: flex;
+    white-space: normal;
+
+    .el-checkbox__label {
+        margin-top: -4px;
+    }
+}
+
+.q-field-content {
+    .q-if {
+        background-color: $c-light-blue;
+        padding-top: 0;
+
+        &:hover {
+            &:before {
+                color: $c-light-gray;
+            }
+        }
+    }
+
+    .q-if-has-label .q-if-inner {
+        padding-top: 1rem;
+    }
+
+    .q-if-label,
+    .q-input-target {
+        padding-left: 0.5rem;
+    }
+    .q-if-label {
+        margin-top: 4px;
+    }
+}
+
+.q-field--bg-white {
+    .q-field-content {
+        .q-if {
+            background-color: #ffffff;
+        }
+    }
+}
+
+.q-field {
+    &--bg-white {
+        .q-field-content {
+            .q-if {
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    &--overflow {
+        .q-field-content {
+            overflow: visible;
+        }
+    }
+
+    &--overflow-auto {
+        .q-field-content {
+            overflow: auto;
+        }
+    }
+
+    &--wrap {
+        .q-field-content {
+            white-space: normal;
+        }
+    }
+}
