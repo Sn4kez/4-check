@@ -62,3 +62,89 @@ If you want to see what other options you have with artisan use:
 1. Clone pdf-gernerator-templates branch to get 4-check Template exportes.
 2. Import those templates to your pdf genreator account.
 3. Include the resources to 'app/Http/Controllers/AnalyticsController.php' and 'app/Http/Controllers/AuditController.php' (Have a look for ToDo: instructions).
+
+## Frontend
+
+### What is this?
+4check-frontend is the user interface for creating and organizing complex workflows and checklists. It based on [vue@^2.5.17](https://github.com/vuejs/vuejs.org)
+
+### Dependencies
+| Package | Version |
+|---|---|
+| @capacitor/android | ^1.0.0-beta.8 |
+| @capacitor/cli | ^1.1.1 |
+| @capacitor/core | ^1.0.0-beta.8 |
+| @capacitor/ios | ^1.0.0-beta.8 |
+| @capacitor/ios | ^1.0.0-beta.8 |
+| axios | ^0.18.1 |
+| chart.js | ^2.7.3 |
+| element-ui | ^2.4.6 |
+| es6-promise | ^4.2.4 |
+| html2pdf.js | ^0.9.0 |
+| jspdf | ^1.5.3 |
+| lodash | ^4.17.15 |
+| qs | ^6.5.2 |
+| quasar-extras | ^2.0.5 |
+| quasar-framework | ^0.17.8 |
+| register-service-worker | ^1.0.0 |
+| vue | ^2.5.17 |
+| vue-axios | ^2.1.3 |
+| vue-chartjs | ^3.4.0 |
+| vue-i18n | ^7.8.1 |
+| vue-localstorage | ^0.6.2 |
+| vue-phone-number-input | ^0.1.4 |
+| vue-progressbar | ^0.7.5 |
+| vue-router | ^3.0.1 |
+| vue-sessionstorage | ^1.0.0 |
+| vue-tour | ^1.1.0 |
+| vuedraggable | ^2.16.0 |
+| vuelidate | ^0.7.4 |
+| vuex | ^3.0.1 |
+| @vue/cli-plugin-babel | ^3.9.2 |
+| @vue/cli-plugin-e2e-cypress | ^3.0.0-beta.15 |
+| @vue/cli-plugin-eslint | ^3.0.0-beta.15 |
+| @vue/cli-plugin-pwa | ^3.0.0 |
+| @vue/cli-plugin-unit-jest | ^3.0.0-beta.15 |
+| @vue/cli-service | ^3.9.3 |
+| @vue/eslint-config-prettier | ^3.0.0 |
+| @vue/test-utils | ^1.0.0-beta.16 |
+| babel-core | 7.0.0-bridge.0 |
+| babel-jest | ^23.0.1 |
+| node-sass | ^4.12.0 |
+| sass-loader | ^7.0.1 |
+| stylus | ^0.54.5 |
+| stylus-loader | ^3.0.1 |
+| vue-cli-plugin-quasar | ^0.2.1 |
+| vue-svg-loader | ^0.5.0 |
+| vue-template-compiler | ^2.5.17 |
+
+### Setup
+To make this work you need to install and run the [backend](https://github.com/Sn4kez/4-check/tree/backend) as well.
+
+#### Installation
+1. Clone the frontend branch from this repository to your environment
+2. Set environment variable `VUE_APP_API_URL` (for more information see [environment variables](#environment-variables))
+3. Run `yarn install` or `npm install` to install dependencies
+
+*Supported node version: `**12.0.0**`*
+
+#### Run and build
+| Command | Description |
+|---|---|
+| `yarn serve` or `npm run serve` | serve with hot reload at localhost:8080 |
+| `yarn build` or `npm run build` | creates a build for production with minification |
+| `yarn build --report` or `npm run build --report` | creates a build for production and view the bundle analyzer report |
+
+
+#### Test
+| Command | Description |
+|---|---|
+| `yarn test:unit` or `npm run test:unit` | Run the out of the box vue unit tests. [More information](https://vue-test-utils.vuejs.org/) |
+| `yarn test:e2e` or `npm run test:e2e` | Run end-to-end tests |
+
+
+#### Environment variables
+
+| Variable | Description |
+|---|---|
+| VUE_APP_API_URL | URL to 4check backend |
