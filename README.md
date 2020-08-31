@@ -17,29 +17,29 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 #### Packages
 
-[vlucas/phpdotenv](https://github.com/vlucas/phpdotenv/tree/2.2) v2.2  
-[ramsey/uuid](https://github.com/ramsey/uuid) v3.7  
-[barryvdh/laravel-cors](https://github.com/fruitcake/laravel-cors/tree/0.11) v0.11  
-[laravel/passport](https://github.com/laravel/passport/tree/5.0) v5.0.3 [Documentation](https://laravel.com/docs/5.6/passport)  
-[dusterio/lumen-passport](https://github.com/dusterio/lumen-passport) v0.2.6  
-[illuminate/mail](https://github.com/illuminate/mail/tree/5.6) v5.6  
-[illuminate/support](https://github.com/illuminate/support/tree/5.6) v5.6  
-[laravel/cashier](https://github.com/laravel/cashier/tree/7.0) v7.0 [Documentation](https://laravel.com/docs/5.6/billing)  
-[simshaun/recurr](https://github.com/simshaun/recurr) v3.0  
-[guzzlehttp/guzzle](https://github.com/guzzle/guzzle/tree/6.5) v6.3  
+[vlucas/phpdotenv](https://github.com/vlucas/phpdotenv/tree/2.2) v2.2
+[ramsey/uuid](https://github.com/ramsey/uuid) v3.7
+[barryvdh/laravel-cors](https://github.com/fruitcake/laravel-cors/tree/0.11) v0.11
+[laravel/passport](https://github.com/laravel/passport/tree/5.0) v5.0.3 [Documentation](https://laravel.com/docs/5.6/passport)
+[dusterio/lumen-passport](https://github.com/dusterio/lumen-passport) v0.2.6
+[illuminate/mail](https://github.com/illuminate/mail/tree/5.6) v5.6
+[illuminate/support](https://github.com/illuminate/support/tree/5.6) v5.6
+[laravel/cashier](https://github.com/laravel/cashier/tree/7.0) v7.0 [Documentation](https://laravel.com/docs/5.6/billing)
+[simshaun/recurr](https://github.com/simshaun/recurr) v3.0
+[guzzlehttp/guzzle](https://github.com/guzzle/guzzle/tree/6.5) v6.3
 
 #### Services
 
-[Stripe](https://stripe.com/) - Payment was handled by stripe.  
-[Sendgrid](https://sendgrid.com) - E-Mail logistics were handled by sendgrid.  
-[PDF Generator API](https://pdfgeneratorapi.com) - PDF Generation was handled by PDF Generator API  
+[Stripe](https://stripe.com/) - Payment was handled by stripe.
+[Sendgrid](https://sendgrid.com) - E-Mail logistics were handled by sendgrid.
+[PDF Generator API](https://pdfgeneratorapi.com) - PDF Generation was handled by PDF Generator API
 
 ### Setup Instructions for Backend Code
 
 Before installing the 4-check Backend please make sure that you fulfil general lumen requirements ([see here](https://lumen.laravel.com/docs/5.6)).
 
 1. Clone backend branch from this repository to your server
-2. Setup a Database (for example postgres or mysql) 
+2. Setup a Database (for example postgres or mysql)
 3. Copy .env.example and rename it to .env
 `cp .env.example .env`
 4. Make sure that your .env file contains all needed configuration information
@@ -67,6 +67,72 @@ If you want to see what other options you have with artisan use:
 
 ### What is this?
 4check-frontend is the user interface for creating and organizing complex workflows and checklists. It based on [vue@^2.5.17](https://github.com/vuejs/vuejs.org)
+
+### Service Worker
+#### What is a Service Worker?
+A service worker is a type of web worker. It's essentially a JavaScript file that runs separately from the main browser thread, intercepting network requests, caching or retrieving resources from the cache, and delivering push messages.
+
+Because workers run separately from the main thread, service workers are independent of the application they are associated with.
+> Read more here [developers.google.com](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker)
+
+
+#### @vue/cli-plugin-pwa
+pwa plugin for vue-cli. [Learn more](https://cli.vuejs.org/core-plugins/pwa.html#configuration)
+
+#### Configuration
+Configuration is handled via the pwa property of either the vue.config.js file, or the "vue" field in package.json.
+
+##### Example configuration
+```javascript
+module.exports = {
+  // ...other vue-cli plugin options...
+  pwa: {
+    name: '4check',
+    themeColor: '#4DBA87',
+    msTileColor: '#000000',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
+
+    // configure the workbox plugin
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      // swSrc is required in InjectManifest mode.
+      swSrc: 'dev/sw.js',
+      // ...other Workbox options...
+    }
+  }
+}
+```
+
+### Notable frameworks
+
+#### capacitorjs
+Capacitor turns any web app into a native app so you can run one app across iOS, Android, and the Web with the same code.
+
+#### quasar
+Quasar (pronounced /ˈkweɪ.zɑɹ/) is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive++ websites/apps in many flavours:
+
+* SPAs (Single Page App)
+* SSR (Server-side Rendered App) (+ optional PWA client takeover)
+* PWAs (Progressive Web App)
+* BEX (Browser Extension)
+* Mobile Apps (Android, iOS, …) through Cordova or Capacitor
+* Multi-platform Desktop Apps (using Electron)
+
+#### html2pdf.js
+html2pdf converts any webpage or element into a printable PDF entirely client-side using html2canvas and jsPDF.
+
+#### vue-axios
+A small wrapper for integrating [axios](https://github.com/axios/axios) to Vuejs
+
+#### vue-sessionstorage
+A Simple Plugin to Deal with SessionStorage on Vue.js
+
+#### vue-chartjs
+Easy and beautiful charts with (Chart.js)[https://www.chartjs.org/] and Vue.js
+
+#### vue-i18n
+Internationalization plugin for Vue.js
 
 ### Dependencies
 | Package | Version |
