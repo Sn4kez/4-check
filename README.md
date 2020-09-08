@@ -1,6 +1,25 @@
 # 4-check Checklist App
+4-check is a web-based software to digitize checklists and forms. Checklists can be created and adapted flexibly using a modular system. The following modules are available for building a checklist: Questions, signatures, localization information, images and note fields.
 
-Description of 4-check
+The checklists are automatically evaluated and are available online. In addition, PDF reports can be created and downloaded quickly and easily. 
+
+Users can be invited and administered via a central interface.
+
+Stripe was integrated as a payment service provider to ensure an automated payment process.
+
+The software is also available via a service worker on every end device - sometimes even offline.
+
+4-check is particularly suitable for digitizing checklists in the following areas: 
+* Restaurants 
+* Catering 
+* Hotels 
+* Workshops 
+* Facility management 
+* Cleaning 
+* Hospitals 
+* Offices
+
+We make the source code of our software available here Open Source, as unfortunately we could not build a viable business model with it. We no longer update the files used here independently. If you have any questions, suggestions, updates or requests, just get in touch!
 
 ## Disclaimer
 
