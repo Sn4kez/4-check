@@ -21,7 +21,7 @@ The software is also available via a service worker on every end device - someti
 * Hospitals 
 * Offices
 
-<a href="https://ibb.co/C6ktfkB"><img src="https://i.ibb.co/G9KJqK7/Modulbaum-Checklisten.jpg" alt="Modulbaum-Checklisten" border="0"></a><br /><a target='_blank' href='https://de.imgbb.com/'>bild vom foto</a><br /> 
+<a href="https://ibb.co/C6ktfkB"><img src="https://i.ibb.co/G9KJqK7/Modulbaum-Checklisten.jpg" alt="Modulbaum-Checklisten" border="0"></a><br /><br /> 
 
 We make the source code of our software available here Open Source, as unfortunately we could not build a viable business model with it. We no longer update the files used here independently. If you have any questions, suggestions, updates or requests, just get in touch!
 
