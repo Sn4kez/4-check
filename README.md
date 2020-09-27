@@ -1,5 +1,5 @@
 # 4-check Checklist App
-<a href="https://ibb.co/s36R2ZC"><img src="https://i.ibb.co/mzXTG30/Ger-te-bergreifend.jpg" alt="Ger-te-bergreifend" border="0"></a><br /><a target='_blank' href='https://de.imgbb.com/'>bild vom foto</a><br />
+<a href="https://ibb.co/s36R2ZC"><img src="https://i.ibb.co/mzXTG30/Ger-te-bergreifend.jpg" alt="Ger-te-bergreifend" border="0"></a><br /><br />
 
 4-check is a web-based software to digitize checklists and forms. Checklists can be created and adapted flexibly using a modular system. The following modules are available for building a checklist: Questions, signatures, localization information, images and note fields.
 
